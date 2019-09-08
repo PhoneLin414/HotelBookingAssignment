@@ -10,9 +10,18 @@ import UIKit
 
 class HotelCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var imgCollection: UIImageView!
+    
+    @IBOutlet weak var ratingView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        imgCollection.layer.cornerRadius = 20
+        ratingView.layer.cornerRadius = 5
+        
+        
     }
 
 }

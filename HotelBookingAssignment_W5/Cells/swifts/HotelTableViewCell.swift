@@ -10,9 +10,16 @@ import UIKit
 
 class HotelTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var priceView: UIView!
+    @IBOutlet weak var imgHotel: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    
+        priceView.layer.cornerRadius = 5
+        imgHotel.layer.cornerRadius = 10
+        
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
